@@ -3,78 +3,110 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Johonatan Hernandez - Cybersecurity Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
-    header, section, footer { padding: 2rem; max-width: 1000px; margin: auto; }
-    h1, h2, h3 { color: #003366; }
-    .skills i, .experience i { color: #006699; margin-right: 0.5rem; }
-    .lang-toggle { float: right; cursor: pointer; padding: 0.5rem; background: #003366; color: white; border: none; }
-    .lang-toggle:hover { background: #005599; }
-    .hidden { display: none; }
-    .icons span { display: block; margin-bottom: 0.5rem; }
-  </style>
+  <title>Johonatan Hernandez - Cybersecurity Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#003366',
+            accent: '#006699'
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-  <header>
-    <button class="lang-toggle" onclick="toggleLang()">ES / EN</button>
-    <h1 id="title-en">Johonatan Hernandez - Cybersecurity Analyst</h1>
-    <h1 id="title-es" class="hidden">Johonatan Hernandez - Analista de Ciberseguridad</h1>
-    <p id="intro-en">
-      Passionate about technology and its transformative impact on the world...
-    </p>
-    <p id="intro-es" class="hidden">
-      Soy un apasionado por la tecnología y su impacto transformador en el mundo...
-    </p>
-    <p id="passion-en">
-      My passion goes beyond the technical...
-    </p>
-    <p id="passion-es" class="hidden">
-      Mi pasión no se detiene en lo técnico...
-    </p>
-  </header>
-
-  <section>
-    <h2>About</h2>
-    <p>
-      Cybersecurity Analyst with 10+ years of experience...
-    </p>
-    <p>
-      Results-driven Information Security Analyst...
-    </p>
-  </section>
-
-  <section class="skills">
-    <h2><i class="fa-solid fa-shield-halved"></i> Skills</h2>
-    <div class="icons">
-      <span><i class="fa-solid fa-file-lines"></i> Log investigation (SOC)...</span>
-      <!-- more skills -->
+<body class="bg-gray-50 text-gray-800">
+  <div class="max-w-5xl mx-auto p-6">
+    <!-- Language Toggle -->
+    <div class="flex justify-end">
+      <button id="langToggle" class="px-4 py-1 bg-primary text-white rounded">ES / EN</button>
     </div>
-  </section>
 
-  <section class="experience">
-    <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
-    <h3><i class="fa-solid fa-building"></i> DATAMART SPA</h3>
-    <ul>
-      <li>Security event and log analysis...</li>
-      <!-- more experience items -->
-    </ul>
-    <!-- more experience sections -->
-  </section>
+    <!-- Header -->
+    <header class="text-center my-8">
+      <h1 class="text-4xl font-bold text-primary" id="name-en">Johonatan Hernandez - Cybersecurity Analyst</h1>
+      <h1 class="text-4xl font-bold text-primary hidden" id="name-es">Johonatan Hernandez - Analista de Ciberseguridad</h1>
+      <p class="mt-4" id="bio-en">
+        Passionate about technology and its transformative impact on the world. Since childhood... I’ve built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments. I explore AI, IoT, automation and cyber forensics.
+      </p>
+      <p class="mt-4 hidden" id="bio-es">
+        Soy un apasionado por la tecnología y su impacto transformador en el mundo. Desde una edad temprana... investigando amenazas, diseñando defensas estratégicas y liderando operaciones de seguridad en entornos empresariales y en la nube. Me motiva explorar IA, IoT, automatización y ciberinvestigación.
+      </p>
+    </header>
 
-  <footer>
-    <h2>Contact</h2>
-    <p><i class="fa-solid fa-envelope"></i> ingenierosys84@outlook.es</p>
-    <p><i class="fa-solid fa-phone"></i> +1 369 399 0641</p>
-    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank">LinkedIn Profile</a></p>
-  </footer>
+    <!-- About -->
+    <section class="my-10">
+      <h2 class="text-2xl font-semibold text-accent">About</h2>
+      <p class="mt-2">Cybersecurity Analyst with 10+ years of experience... Skilled in scripting, Zero Trust, cloud security, regulatory frameworks, and business communication. Spanish and English.</p>
+    </section>
+
+    <!-- Skills -->
+    <section class="my-10">
+      <h2 class="text-2xl font-semibold text-accent">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+        <div class="flex items-start space-x-2"><span>🔍</span> <p>Log investigation (SOC), event analysis (Sophos, Splunk, CrowdStrike)</p></div>
+        <div class="flex items-start space-x-2"><span>🛡️</span> <p>Threat detection and response</p></div>
+        <div class="flex items-start space-x-2"><span>🗣️</span> <p>Bilingual communication (English & Spanish)</p></div>
+        <div class="flex items-start space-x-2"><span>🧪</span> <p>Vulnerability assessments and remediation planning</p></div>
+        <div class="flex items-start space-x-2"><span>💻</span> <p>Ethical hacking and penetration testing (Kali Linux, OWASP ZAP, Python)</p></div>
+        <div class="flex items-start space-x-2"><span>🧬</span> <p>DAST/SAST testing within SDLC</p></div>
+        <div class="flex items-start space-x-2"><span>🔎</span> <p>IOC/IOA research and analysis</p></div>
+        <div class="flex items-start space-x-2"><span>📜</span> <p>Policy development (ISO 27001, PCI-DSS, NIST)</p></div>
+        <div class="flex items-start space-x-2"><span>☁️</span> <p>Cloud Platforms: Azure, AWS, Google Cloud</p></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="my-10">
+      <h2 class="text-2xl font-semibold text-accent">Experience</h2>
+
+      <div class="mt-6">
+        <h3 class="text-xl font-semibold">📌 DATAMART SPA</h3>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Security event and log analysis using Guarduty, Inspector, Securityhub.</li>
+          <li>Ethical hacking, penetration testing, and vulnerability assessments (DAST/SAST).</li>
+          <li>Action plan development for identified cyber risks.</li>
+          <li>Executive and technical presentation of findings.</li>
+          <li>GRC support, policy documentation, Drata config, access reviews, Slack/Jira optimization.</li>
+        </ul>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-xl font-semibold">🏦 Caja Social Bank</h3>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Security control monitoring for networks, servers, and databases.</li>
+          <li>Mitigation of threats using Nessus, Qualys, Rapid7, Acunetix (DAST/SAST).</li>
+          <li>IOC/IOA investigation, secure code analysis with Snyk, DevSkim, SonarQube.</li>
+          <li>PCI-DSS compliance, documentation, audit support, privacy coordination (GDPR/HIPAA).</li>
+        </ul>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-xl font-semibold">🚚 SERVIENTREGA S.A.</h3>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Cybersecurity control implementation, ethical hacking, and penetration testing.</li>
+          <li>System and network hardening policies, vulnerability monitoring, ISO 27001 alignment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="my-10">
+      <h2 class="text-2xl font-semibold text-accent">Contact</h2>
+      <p class="mt-2">📧 <a href="mailto:ingenierosys84@outlook.es" class="text-blue-600">ingenierosys84@outlook.es</a></p>
+      <p>📞 +1 369 399 0641</p>
+      <p>🔗 <a href="https://linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank" class="text-blue-600">LinkedIn</a></p>
+    </section>
+  </div>
 
   <script>
-    function toggleLang() {
-      document.querySelectorAll('#title-en, #intro-en, #passion-en').forEach(e => e.classList.toggle('hidden'));
-      document.querySelectorAll('#title-es, #intro-es, #passion-es').forEach(e => e.classList.toggle('hidden'));
-    }
+    document.getElementById('langToggle').addEventListener('click', () => {
+      document.querySelectorAll('#name-en, #bio-en').forEach(el => el.classList.toggle('hidden'));
+      document.querySelectorAll('#name-es, #bio-es').forEach(el => el.classList.toggle('hidden'));
+    });
   </script>
 </body>
 </html>
