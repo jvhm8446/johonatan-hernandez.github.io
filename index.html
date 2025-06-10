@@ -3,119 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Johonatan Hernandez | Cybersecurity Specialist</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Johonatan Hernandez - Cybersecurity Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f7f7f7; color: #333; }
+    header, section, footer { padding: 2rem; max-width: 1000px; margin: auto; }
+    h1, h2, h3 { color: #003366; }
+    .skills i, .experience i { color: #006699; margin-right: 0.5rem; }
+    .lang-toggle { float: right; cursor: pointer; padding: 0.5rem; background: #003366; color: white; border: none; }
+    .lang-toggle:hover { background: #005599; }
+    .hidden { display: none; }
+    .icons span { display: block; margin-bottom: 0.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <button class="lang-toggle" onclick="toggleLang()">ES / EN</button>
+    <h1 id="title-en">Johonatan Hernandez - Cybersecurity Analyst</h1>
+    <h1 id="title-es" class="hidden">Johonatan Hernandez - Analista de Ciberseguridad</h1>
+    <p id="intro-en">
+      Passionate about technology and its transformative impact on the world...
+    </p>
+    <p id="intro-es" class="hidden">
+      Soy un apasionado por la tecnología y su impacto transformador en el mundo...
+    </p>
+    <p id="passion-en">
+      My passion goes beyond the technical...
+    </p>
+    <p id="passion-es" class="hidden">
+      Mi pasión no se detiene en lo técnico...
+    </p>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>
+      Cybersecurity Analyst with 10+ years of experience...
+    </p>
+    <p>
+      Results-driven Information Security Analyst...
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2><i class="fa-solid fa-shield-halved"></i> Skills</h2>
+    <div class="icons">
+      <span><i class="fa-solid fa-file-lines"></i> Log investigation (SOC)...</span>
+      <!-- more skills -->
+    </div>
+  </section>
+
+  <section class="experience">
+    <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+    <h3><i class="fa-solid fa-building"></i> DATAMART SPA</h3>
+    <ul>
+      <li>Security event and log analysis...</li>
+      <!-- more experience items -->
+    </ul>
+    <!-- more experience sections -->
+  </section>
+
+  <footer>
+    <h2>Contact</h2>
+    <p><i class="fa-solid fa-envelope"></i> ingenierosys84@outlook.es</p>
+    <p><i class="fa-solid fa-phone"></i> +1 369 399 0641</p>
+    <p><i class="fa-brands fa-linkedin"></i> <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank">LinkedIn Profile</a></p>
+  </footer>
+
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif']
-          },
-          colors: {
-            softblue: '#d6f0ff'
-          }
-        }
-      }
+    function toggleLang() {
+      document.querySelectorAll('#title-en, #intro-en, #passion-en').forEach(e => e.classList.toggle('hidden'));
+      document.querySelectorAll('#title-es, #intro-es, #passion-es').forEach(e => e.classList.toggle('hidden'));
     }
   </script>
-</head>
-<body class="bg-softblue text-gray-800 font-sans">
-  <!-- Sidebar Navigation -->
-  <aside class="fixed top-0 left-0 h-full w-64 bg-white text-gray-700 shadow-lg flex flex-col items-center py-10 z-10">
-    <img src="profile_photo.jpg" alt="Profile Photo" class="w-28 h-28 rounded-full border-4 border-teal-500 object-cover" />
-    <nav class="mt-10 space-y-6 text-lg font-medium">
-      <a href="#about" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>👤</span><span>About</span></a>
-      <a href="#skills" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>💼</span><span>Skills</span></a>
-      <a href="#projects" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>📁</span><span>Projects</span></a>
-      <a href="#education" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>🎓</span><span>Education</span></a>
-      <a href="#certifications" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>📜</span><span>Certifications</span></a>
-      <a href="#contact" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>📬</span><span>Contact</span></a>
-      <a href="resume.pdf" class="flex items-center space-x-2 hover:text-teal-800 transition-all duration-300"><span>📄</span><span>Resume</span></a>
-    </nav>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="ml-64 p-10 space-y-20 scroll-smooth">
-    <!-- About Section -->
-    <section id="about" class="min-h-screen flex flex-col justify-center animate-fade-in">
-      <h1 class="text-5xl font-bold">Hi, I'm <span class="bg-teal-800 text-white px-2 py-1 rounded">Johonatan Hernandez</span></h1>
-      <h2 class="text-2xl mt-2 text-teal-900">Cybersecurity Specialist & Cloud Security Professional</h2>
-      <p class="mt-6 max-w-3xl text-lg">Passionate cybersecurity expert and systems engineer with over a decade of experience in protecting infrastructure, ensuring compliance, and supporting distributed teams across cloud and enterprise environments.</p>
-      <div class="flex items-center space-x-6 mt-8 text-2xl">
-        <a href="mailto:ingenierosys84@outlook.es" class="hover:text-teal-600">📧</a>
-        <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank" class="hover:text-teal-600">🔗</a>
-        <a href="resume.pdf" class="hover:text-teal-600" download>📄</a>
-      </div>
-      <div class="mt-6 space-x-4">
-        <a href="#projects" class="px-5 py-2 bg-teal-600 text-white font-semibold rounded hover:bg-teal-700">Read More</a>
-        <a href="#contact" class="px-5 py-2 border border-teal-600 text-teal-600 font-semibold rounded hover:bg-teal-600 hover:text-white">Contact Me</a>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="animate-fade-in">
-      <h2 class="text-3xl font-bold mb-4">Skills</h2>
-      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc list-inside">
-        <li>SIEM, CrowdStrike, Splunk</li>
-        <li>Tenable, Qualys, Rapid7</li>
-        <li>Cloud Security (Azure, AWS, GCP)</li>
-        <li>Compliance (SOC 2, ISO 27001, HIPAA)</li>
-        <li>Drata GRC platform</li>
-        <li>Penetration Testing (Kali, ZAP, Python)</li>
-      </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="animate-fade-in">
-      <h2 class="text-3xl font-bold mb-4">Projects</h2>
-      <ul class="space-y-3">
-        <li><strong>Azure Sentinel Engineering</strong> – Detection rules, Logic Apps, automation.</li>
-        <li><strong>Compliance Automation</strong> – Access reviews, evidence, policies with Drata.</li>
-        <li><strong>Penetration Testing Toolkit</strong> – Python scripts, Kali automation.</li>
-        <li><strong>Security Awareness Program</strong> – Bilingual internal and external training.</li>
-      </ul>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="animate-fade-in">
-      <h2 class="text-3xl font-bold mb-4">Education</h2>
-      <ul class="list-disc list-inside">
-        <li><strong>Specialization in Computer Security</strong> – Universidad Piloto de Colombia (2016–2017)</li>
-        <li><strong>Systems Engineer</strong> – Universidad Simón Bolívar (2005–2011)</li>
-      </ul>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="animate-fade-in">
-      <h2 class="text-3xl font-bold mb-4">Certifications</h2>
-      <ul class="list-disc list-inside">
-        <li>Security Engineering on AWS – AWS Training (2023)</li>
-        <li>Hacker Tools & Incident Handling – BASE4 Security (2024)</li>
-        <li>Incident Response & Threat Hunting – BASE4/Cybersecurity Institute (2024)</li>
-        <li>Ethical Hacking – El Bosque University (2021)</li>
-        <li>ISO 27001 Certified Auditor – CertiProf (2018)</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="animate-fade-in">
-      <h2 class="text-3xl font-bold mb-4">Contact</h2>
-      <p>Email: <a href="mailto:ingenierosys84@outlook.es" class="text-teal-700 hover:underline">ingenierosys84@outlook.es</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank" class="text-teal-700 hover:underline">Profile</a></p>
-      <p>Location: Calgary, AB</p>
-    </section>
-  </main>
-
-  <style>
-    .animate-fade-in {
-      animation: fadeIn 1s ease-in;
-    }
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </body>
 </html>
