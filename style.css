@@ -71,3 +71,76 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
+
+
+body {
+  background: #dbeef3;
+}
+.hero {
+  margin-top: 40px;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.hero h1 .highlight {
+  background-color: #00695c;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.hero h3 {
+  color: #333;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.hero p {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.social-icons {
+  margin-top: 20px;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cta-buttons {
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.btn.filled {
+  background-color: white;
+  color: #00695c;
+  border: 1px solid white;
+}
+.btn.filled:hover {
+  background-color: #00695c;
+  color: white;
+}
+.btn.outline {
+  background-color: transparent;
+  color: #00695c;
+  border: 1px solid #00695c;
+}
+.btn.outline:hover {
+  background-color: #00695c;
+  color: white;
+}
