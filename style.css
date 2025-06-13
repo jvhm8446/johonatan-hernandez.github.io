@@ -35,11 +35,12 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .main {
-  margin-left: 220px;
+  flex: 1;
   padding: 40px;
   background: #e6f0f0;
   width: 100%;
 }
 .main section {
+  flex: 1;
   margin-bottom: 60px;
 }
