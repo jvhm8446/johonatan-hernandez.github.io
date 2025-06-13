@@ -44,3 +44,30 @@ body {
   flex: 1;
   margin-bottom: 60px;
 }
+
+
+.hero {
+  margin-top: 40px;
+  text-align: left;
+}
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.hero h1 .highlight {
+  background-color: #00695c;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+.hero h3 {
+  color: #444;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.hero p {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
