@@ -2,75 +2,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Johonatan Hernandez</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Johonatan Hernandez - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <div class="sidebar">
-    <img src="profile.jpg" class="profile" alt="profile" />
-    <ul class="nav">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume">Resume</a></li>
+    <img src="profile.jpg" class="profile" alt="profile">
+    <ul>
+      <li><a href="#about">👤 About</a></li>
+      <li><a href="#experience">📈 Experience</a></li>
+      <li><a href="#projects">📁 Projects</a></li>
+      <li><a href="#skills">🛠️ Skills</a></li>
+      <li><a href="#education">🎓 Education</a></li>
+      <li><a href="#contact">✉️ Contact</a></li>
+      <li><a href="#resume">📄 Resume</a></li>
     </ul>
   </div>
-
   <div class="main">
-    <section id="about" class="section">
+    <section id="about" class="hero">
       <h1>Hi, I'm <span class="highlight">Johonatan Hernandez</span></h1>
       <h3><span id="typed-text"></span></h3>
-      <p>I am passionate about technology and its transformative impact on the world...</p>
-    </section>
+      
+<p>I am passionate about technology and its transformative impact on the world. From an early age, my curiosity about how digital systems work led me to train as a systems engineer and specialize in cybersecurity. With over a decade of experience, I have built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments.</p>
 
-    <section id="experience" class="section">
-      <h2>Experience</h2>
-      <p>10+ years in cybersecurity operations, SOC, threat detection, incident response.</p>
-    </section>
+<p>My passion does not stop at the technical. I am motivated to explore emerging areas such as artificial intelligence (AI), the Internet of Things (IoT), intelligent automation, and cyber investigation. I firmly believe that innovation and defense must evolve together, which is why I devote part of my time to studying new technological advances, understanding how attackers think, and developing creative solutions for the challenges of the future.</p>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p>SIEM rules development, cloud automation with Drata, honeypots on Azure.</p>
-    </section>
+<p>I enjoy complex challenges: from analyzing a sophisticated cyberattack to understanding how a new device can affect privacy or critical infrastructure. I closely follow new technological trends because I believe that knowledge is the best tool for anticipating risks and building a more secure and ethical future.</p>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, PowerShell</li>
-        <li>Splunk, Defender, Jira</li>
-        <li>NIST, ISO 27001, SOC 2</li>
-      </ul>
+<div class="social-icons">
+        <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon"></a>
+        <a href="https://github.com/johonatan" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon"></a>
+      </div>
+      <div class="cta-buttons">
+        <a href="#about" class="btn filled">Read More</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
     </section>
-
-    <section id="education" class="section">
-      <h2>Education</h2>
-      <p>Systems Engineering - Universidad Simón Bolívar<br>Specialization - Universidad Piloto de Colombia</p>
-    </section>
-
-    <section id="contact" class="section">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Email: ingenierosys84@outlook.es<br>Phone: +1 (368) 399-0641</p>
-    </section>
-
-    <section id="resume" class="section">
-      <h2>Resume</h2>
-      <a href="JOHONATAN_HERNANDEZ_RESUME-Cy.pdf" target="_blank" download>Download Resume PDF</a>
+      <p>Email: ingenierosys84@outlook.es</p>
+      <p>Phone: +1 (368) 399-0641</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank">Profile</a></p>
     </section>
   </div>
-
   <script>
     var typed = new Typed("#typed-text", {
       strings: [
-        "A Cybersecurity Analyst",
+        "A Cybersecurity Analyst & Compliance Expert",
         "A Problem Solver",
         "An AI Enthusiast",
-        "Passionate about Technology"
+        "A passionate about technology"
       ],
       typeSpeed: 40,
       backSpeed: 20,
