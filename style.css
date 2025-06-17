@@ -51,3 +51,24 @@ main#main-content h2 {
   color: #2e716d;
   margin-top: 0;
 }
+
+.hero {
+  background-color: #5d9ca7;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+.hero .highlight {
+  background-color: #01796f;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.hero .subtitle {
+  font-weight: 300;
+  margin-top: 10px;
+}
+.hero .intro-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 15px;
+}
