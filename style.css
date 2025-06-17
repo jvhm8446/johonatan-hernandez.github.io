@@ -192,3 +192,46 @@ h1, h2, .subtitle, #typing-text {
   margin: 10px 0;
   font-size: 16px;
 }
+
+.experience-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  padding: 25px 30px;
+  max-width: 900px;
+  font-size: 16px;
+}
+.experience-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.experience-card-logo {
+  height: 45px;
+  object-fit: contain;
+}
+.experience-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #207ab7;
+  margin: 0;
+}
+.experience-card-role {
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.experience-card-role img {
+  height: 14px;
+  width: auto;
+}
+.experience-card ul {
+  padding-left: 20px;
+}
+.experience-card ul li {
+  margin-bottom: 10px;
+}
