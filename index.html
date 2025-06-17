@@ -5,27 +5,7 @@
   <meta charset="UTF-8">
   <title>Johonatan Hernandez - Portfolio</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-window.addEventListener("scroll", function() {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".sidebar ul li a");
-
-  let current = "";
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 60;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
-</script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <div class="sidebar">
@@ -42,18 +22,16 @@ window.addEventListener("scroll", function() {
   </div>
   <div class="main">
     <section id="about" class="hero">
-      <h1>Hi, I'm <span class="highlight">Johonatan Hernandez Machado</span></h1>
+      <h1>Hi, I'm <span class="highlight">Johonatan Hernandez</span></h1>
       <h3><span id="typed-text"></span></h3>
-<div class="highlight-box">
-  </div>
-<div class="highlight-box">
-  Results-driven Information Security Analyst with 10+ years of experience in cybersecurity, threat analysis, incident response, and compliance. I am an expert at conducting vulnerability assessments, penetration tests, and implementing robust security measures. I am skilled in SOC operations, cloud security (AWS, Azure, GCP), and regulatory frameworks including ISO 27001, NIST, and PCI-DSS. Proven ability to collaborate cross-functionally and communicate security strategies to technical and non-technical stakeholders. Spanish and English.
-</div>
+      
+<p>I am passionate about technology and its transformative impact on the world. From an early age, my curiosity about how digital systems work led me to train as a systems engineer and specialize in cybersecurity. With over a decade of experience, I have built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments.</p>
 
-      <p>I am passionate about technology and its transformative impact on the world. From an early age, my curiosity about how digital systems work led me to train as a systems engineer and specialize in cybersecurity. With over a decade of experience, I have built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments.</p>
-      <p>My passion does not stop at the technical. I am motivated to explore emerging areas such as artificial intelligence (AI), the Internet of Things (IoT), intelligent automation, and cyber investigation. I firmly believe that innovation and defense must evolve together, which is why I devote part of my time to studying new technological advances, understanding how attackers think, and developing creative solutions for the challenges of the future.</p>
-      <p>I enjoy complex challenges: from analyzing a sophisticated cyberattack to understanding how a new device can affect privacy or critical infrastructure. I closely follow new technological trends because I believe that knowledge is the best tool for anticipating risks and building a more secure and ethical future.</p>
-      <div class="social-icons">
+<p>My passion does not stop at the technical. I am motivated to explore emerging areas such as artificial intelligence (AI), the Internet of Things (IoT), intelligent automation, and cyber investigation. I firmly believe that innovation and defense must evolve together, which is why I devote part of my time to studying new technological advances, understanding how attackers think, and developing creative solutions for the challenges of the future.</p>
+
+<p>I enjoy complex challenges: from analyzing a sophisticated cyberattack to understanding how a new device can affect privacy or critical infrastructure. I closely follow new technological trends because I believe that knowledge is the best tool for anticipating risks and building a more secure and ethical future.</p>
+
+<div class="social-icons">
         <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="icon"></a>
         <a href="https://github.com/johonatan" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon"></a>
       </div>
@@ -62,55 +40,12 @@ window.addEventListener("scroll", function() {
         <a href="#contact" class="btn outline">Contact Me</a>
       </div>
     </section>
-
-    <section id="experience"><h2>About</h2>
-<div class="highlight-box">
-  Cybersecurity Analyst with 10+ years of experience, including 5+ years securing hy-brid and cloud infrastructures. Proven expertise in deploying, configuring, and man-aging security tools such as SIEM, EDR, DLP, IAM, and firewalls. Skilled in scripting (Python, PowerShell), vulnerability management, and incident response. Hands-on with Zero Trust, network segmentation, and insider risk strategies. Strong background with frameworks like NIST, CIS benchmarks, and tools including Microsoft Defender, CrowdStrike, Fortinet. Adept at translating technical risk into business impact, Results-driven Information Security Analyst with 10+ years of experience in cyberse-curity, threat analysis, incident response, and compliance. I am an expert at conduct-ing vulnerability assessments, penetration tests, and implementing robust security measures. I am skilled in SOC operations, cloud security (AWS, Azure, GCP), and regulatory frameworks including ISO 27001, NIST, and PCI-DSS. Proven ability to col-laborate cross-functionally and communicate security strategies to technical and non-technical stakeholders. Spanish and English.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
-    <section id="projects"><h2>Projects</h2>
-<div class="highlight-box">
-  Experienced in managing cybersecurity incidents, auditing IT environments, and deploying proactive defense strategies for enterprise networks.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
-    <section id="skills"><h2>Skills</h2>
-<div class="highlight-box">
-  Experienced in managing cybersecurity incidents, auditing IT environments, and deploying proactive defense strategies for enterprise networks.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
-    <section id="education"><h2>Education</h2>
-<div class="highlight-box">
-  Experienced in managing cybersecurity incidents, auditing IT environments, and deploying proactive defense strategies for enterprise networks.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
-    <section id="contact"><h2>Contact</h2>
-<div class="highlight-box">
-  Experienced in managing cybersecurity incidents, auditing IT environments, and deploying proactive defense strategies for enterprise networks.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
-    <section id="resume"><h2>Resume</h2>
-<div class="highlight-box">
-  Experienced in managing cybersecurity incidents, auditing IT environments, and deploying proactive defense strategies for enterprise networks.
-</div>
-<div class="highlight-box">
-  Proven success implementing cloud-native solutions, vulnerability scans, and continuous security improvement programs aligned with business objectives.
-</div>
-</section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: ingenierosys84@outlook.es</p>
+      <p>Phone: +1 (368) 399-0641</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/johonathan-hernandez-machado-358918109" target="_blank">Profile</a></p>
+    </section>
   </div>
   <script>
     var typed = new Typed("#typed-text", {
@@ -124,26 +59,6 @@ window.addEventListener("scroll", function() {
       backSpeed: 20,
       loop: true
     });
-  
-window.addEventListener("scroll", function() {
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".sidebar ul li a");
-
-  let current = "";
-  sections.forEach(section => {
-    const sectionTop = section.offsetTop - 60;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
-    }
-  });
-
-  navLinks.forEach(link => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
-</script>
+  </script>
 </body>
 </html>
