@@ -8,6 +8,28 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+
+<nav>
+  <ul>
+    <li><a href="#" onclick="loadSection('about')">About</a></li>
+    <li><a href="#" onclick="loadSection('experience')">Experience</a></li>
+    <li><a href="#" onclick="loadSection('projects')">Projects</a></li>
+    <li><a href="#" onclick="loadSection('skills')">Skills</a></li>
+    <li><a href="#" onclick="loadSection('education')">Education</a></li>
+    <li><a href="#" onclick="loadSection('contact')">Contact</a></li>
+    <li><a href="#" onclick="loadSection('resume')">Resume</a></li>
+  </ul>
+</nav>
+
+<div id="main-content" style="padding: 20px;"></div>
+<script>
+function loadSection(section) {
+  fetch(section + '.html')
+    .then(response => response.text())
+    .then(data => document.getElementById('main-content').innerHTML = data);
+}
+</script>
+
   <div class="sidebar">
     <img src="profile.jpg" class="profile" alt="profile">
     <ul>
