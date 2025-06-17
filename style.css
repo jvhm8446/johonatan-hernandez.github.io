@@ -51,31 +51,9 @@ main#main-content h2 {
   color: #2e716d;
   margin-top: 0;
 }
-
-.hero {
-  background-color: #5d9ca7;
-  color: white;
-  padding: 40px;
-  border-radius: 10px;
-}
-.hero .highlight {
-  background-color: #01796f;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-.hero .subtitle {
-  font-weight: 300;
-  margin-top: 10px;
-}
-.hero .intro-text {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-top: 15px;
-}
-
-.hero.clean {
-  background: none;
-  color: #333;
+.hero .highlight.name {
+  background-color: #cceeff;
+  color: #004466;
 }
 .hero .subtitle.emphasized {
   color: #01796f;
@@ -86,25 +64,6 @@ main#main-content h2 {
 .hero .intro-text {
   font-size: 18px;
   line-height: 1.8;
-}
-.sidebar nav ul li {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.sidebar nav ul li a::before {
-  content: "➤";
-  color: #fff;
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-.sidebar nav ul li a:hover::before {
-  transform: translateX(4px);
-}
-
-.highlight.name {
-  background-color: #cceeff;
-  color: #004466;
 }
 .cursor {
   display: inline-block;
@@ -117,4 +76,34 @@ main#main-content h2 {
 @keyframes blink {
   0%, 50% { opacity: 1; }
   51%, 100% { opacity: 0; }
+}
+
+.icon-links {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon-link img {
+  width: 36px;
+  height: 36px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+.icon-link:hover img {
+  transform: scale(1.2);
+}
+.button-link {
+  padding: 8px 16px;
+  border: 2px solid #01796f;
+  background-color: transparent;
+  color: #01796f;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-link:hover {
+  background-color: #01796f;
+  color: white;
 }
