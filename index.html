@@ -22,18 +22,60 @@
         </ul>
       </nav>
     </aside>
-    <main id="main-content">
-      <!-- Content will be loaded here -->
-    </main>
+    <main id="main-content"></main>
   </div>
 
   <script>
     function loadSection(section) {
       fetch(section + '.html')
         .then(response => response.text())
-        .then(data => document.getElementById('main-content').innerHTML = data)
+        .then(data => {
+          document.getElementById('main-content').innerHTML = data;
+
+          if (section === 'about') {
+            startTypingEffect(); // Ejecutar typing después de cargar "about"
+          }
+        })
         .catch(error => console.error('Error loading section:', error));
     }
+
+    function startTypingEffect() {
+      const phrases = [
+        "A Technology Enthusiast",
+        "Problem Solver",
+        "An AI Enthusiast",
+        "A Passionate About Technology"
+      ];
+      let currentPhrase = 0;
+      let currentChar = 0;
+      let isDeleting = false;
+      const typingSpeed = 100;
+
+      const typingText = document.getElementById("typing-text");
+      if (!typingText) return;
+
+      function type() {
+        const current = phrases[currentPhrase];
+        if (isDeleting) {
+          typingText.textContent = current.substring(0, currentChar--);
+          if (currentChar < 0) {
+            isDeleting = false;
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+          }
+        } else {
+          typingText.textContent = current.substring(0, currentChar++);
+          if (currentChar > current.length) {
+            isDeleting = true;
+            setTimeout(type, 1000);
+            return;
+          }
+        }
+        setTimeout(type, isDeleting ? 40 : typingSpeed);
+      }
+
+      type();
+    }
+
     window.onload = () => loadSection('about');
   </script>
 </body>
