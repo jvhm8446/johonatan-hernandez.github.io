@@ -72,3 +72,32 @@ main#main-content h2 {
   line-height: 1.6;
   margin-top: 15px;
 }
+
+.hero.clean {
+  background: none;
+  color: #333;
+}
+.hero .subtitle.emphasized {
+  color: #01796f;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero .intro-text {
+  font-size: 18px;
+  line-height: 1.8;
+}
+.sidebar nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sidebar nav ul li a::before {
+  content: "➤";
+  color: #fff;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+.sidebar nav ul li a:hover::before {
+  transform: translateX(4px);
+}
