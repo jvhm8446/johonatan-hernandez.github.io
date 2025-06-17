@@ -14,7 +14,12 @@
 </section>
 
 <script>
-const phrases = ["A Technology Enthusiast", "Problem Solver", "An AI Enthusiast", "A Passionate About Technology"];
+const phrases = [
+  "A Technology Enthusiast",
+  "Problem Solver",
+  "An AI Enthusiast",
+  "A Passionate About Technology"
+];
 let currentPhrase = 0;
 let currentChar = 0;
 let isDeleting = false;
@@ -37,7 +42,7 @@ function type() {
       return;
     }
   }
-  setTimeout(type, isDeleting ? 50 : typingSpeed);
+  setTimeout(type, isDeleting ? 40 : typingSpeed);
 }
 
 window.onload = type;
