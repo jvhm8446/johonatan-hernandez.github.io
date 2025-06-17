@@ -1,9 +1,11 @@
 
 <section class="hero clean">
   <h1>Hi, I'm <span class="highlight name">Johonatan Hernandez Machado</span></h1>
-  <h3 class="subtitle emphasized"><span id="typing-text"></span><span class="cursor">|</span></h3>
+  <h3 class="subtitle emphasized">
+    <span id="typing-text"></span><span class="cursor">|</span>
+  </h3>
   <p class="intro-text">
-    I am passionate about technology and ITs transformative impact on the world. From an early age, my curiosity about how digital systems work led me to train as a systems engineer and specialize in cybersecurity. With over a decade of experience, I have built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments.
+    I am passionate about technology and its transformative impact on the world. From an early age, my curiosity about how digital systems work led me to train as a systems engineer and specialize in cybersecurity. With over a decade of experience, I have built my career researching threats, designing strategic defenses, and leading security operations in enterprise and cloud environments.
   </p>
   <p class="intro-text">
     My passion does not stop at the technical. I am motivated to explore emerging areas such as artificial intelligence (AI), the Internet of Things (IoT), intelligent automation, and cyber investigation. I firmly believe that innovation and defense must evolve together, which is why I devote part of my time to studying new technological advances, understanding how attackers think, and developing creative solutions for the challenges of the future.
@@ -12,38 +14,4 @@
     I enjoy complex challenges: from analyzing a sophisticated cyberattack to understanding how a new device can affect privacy or critical infrastructure. I closely follow new technological trends because I believe that knowledge is the best tool for anticipating risks and building a more secure and ethical future.
   </p>
 </section>
-
-<script>
-const phrases = [
-  "A Technology Enthusiast",
-  "Problem Solver",
-  "An AI Enthusiast",
-  "A Passionate About Technology"
-];
-let currentPhrase = 0;
-let currentChar = 0;
-let isDeleting = false;
-const typingSpeed = 100;
-const typingText = document.getElementById("typing-text");
-
-function type() {
-  const current = phrases[currentPhrase];
-  if (isDeleting) {
-    typingText.textContent = current.substring(0, currentChar--);
-    if (currentChar < 0) {
-      isDeleting = false;
-      currentPhrase = (currentPhrase + 1) % phrases.length;
-    }
-  } else {
-    typingText.textContent = current.substring(0, currentChar++);
-    if (currentChar > current.length) {
-      isDeleting = true;
-      setTimeout(type, 1000);
-      return;
-    }
-  }
-  setTimeout(type, isDeleting ? 40 : typingSpeed);
-}
-
-window.onload = type;
-</script>
+<script src="typing.js"></script>
