@@ -35,19 +35,21 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
-        .tooltip {
-            display: none;
-            position: absolute;
-            bottom: -70px;
-            left: 0;
-            background: #1f76c2;
-            color: white;
-            padding: 10px;
-            border-radius: 8px;
-            font-size: 14px;
-            width: 100%;
-            z-index: 2;
-        }
+       .tooltip {
+  display: none;
+  position: absolute;
+  bottom: -100%; /* para que baje y no se superponga */
+  left: 0;
+  background: #1f76c2;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  max-width: 350px;       /* Limita el ancho del tooltip */
+  white-space: normal;    /* Permite saltos de línea */
+  overflow-wrap: break-word; /* Rompe palabras largas */
+  z-index: 9999;          /* Lo pone al frente */
+}
         .card:hover .tooltip {
             display: block;
         }
