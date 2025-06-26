@@ -78,5 +78,12 @@
 
     window.onload = () => loadSection('about');
   </script>
+
+<div id="language-switcher" style="position: fixed; top: 10px; right: 20px; z-index: 9999;">
+  <button onclick="setLanguage('es')" id="btn-es" disabled>Español</button>
+  <button onclick="setLanguage('en')" id="btn-en">English</button>
+</div>
+<script src="translate.js"></script>
+
 </body>
 </html>

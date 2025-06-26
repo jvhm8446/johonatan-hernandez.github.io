@@ -14,7 +14,7 @@ function setLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    const lang = localStorage.getItem("lang") || "es";
+    const lang = localStorage.getItem("lang") || "en";
     setLanguage(lang);
     document.getElementById("btn-es").addEventListener("click", () => setLanguage("es"));
     document.getElementById("btn-en").addEventListener("click", () => setLanguage("en"));
