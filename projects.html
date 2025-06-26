@@ -47,21 +47,30 @@
       font-size: 16px;
     }
 
-    .tooltip {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 280px;
-      background: #1f76c2;
-      color: white;
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 6px;
-      margin-top: 5px;
-      width: 300px;
-      z-index: 10;
-    }
+ .tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50px; /* más controlado y no tan lejos */
+  background: #1f76c2;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-top: 8px;
+  width: 360px;
+  z-index: 10;
+  line-height: 1.6; /* 🔁 esto agrega espacio entre líneas */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
 
+    .tooltip ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+.tooltip li {
+  margin-bottom: 5px;
+}
     .card:hover .tooltip {
       display: block;
     }
