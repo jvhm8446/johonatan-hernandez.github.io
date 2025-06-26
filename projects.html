@@ -47,20 +47,21 @@
       font-size: 16px;
     }
 
-    .tooltip {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 80px;
-      background: #1f76c2;
-      color: white;
-      padding: 10px;
-      font-size: 14px;
-      border-radius: 6px;
-      margin-top: 5px;
-      width: 300px;
-      z-index: 10;
-    }
+   .tooltip {
+  display: none;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  background: #1f76c2;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 250px; /* ← AJUSTA ESTE VALOR */
+  z-index: 2;
+  white-space: normal;  /* ← AGREGA ESTO SI NO ESTÁ */
+  word-wrap: break-word; /* ← AGREGA ESTO TAMBIÉN */
+}
 
     .card:hover .tooltip {
       display: block;
