@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div id="language-switcher" style="position: fixed; top: 10px; right: 10px; z-index: 999;">
+    <button onclick="setLanguage('en')" id="btn-en" class="lang-btn">English</button>
+    <button onclick="setLanguage('es')" id="btn-es" class="lang-btn">Español</button>
+  </div>
+
   <div class="container">
     <aside class="sidebar">
       <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
@@ -78,12 +84,7 @@
 
     window.onload = () => loadSection('about');
   </script>
-
-<div id="language-switcher" style="position: fixed; top: 10px; right: 20px; z-index: 9999;">
-  <button onclick="setLanguage('es')" id="btn-es" disabled>Español</button>
-  <button onclick="setLanguage('en')" id="btn-en">English</button>
-</div>
-<script src="translate.js"></script>
-
 </body>
 </html>
+
+<script src="language-switcher.js"></script>
