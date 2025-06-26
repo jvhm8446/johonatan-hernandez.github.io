@@ -2,99 +2,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      padding: 40px;
-    }
-    h2 {
-      color: #1f76c2;
-    }
-    .projects-container {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      max-width: 700px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      position: relative;
-      display: flex;
-      align-items: center;
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: scale(1.02);
-    }
-    .card-icon {
-      margin-right: 20px;
-    }
-    .card-icon img {
-      width: 40px;
-      height: 40px;
-    }
-    .card-content {
-      flex-grow: 1;
-    }
-    .card-title {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-    .tooltip {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 105%;
-      background: #1f76c2;
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
-      font-size: 14px;
-      width: 250px;
-      z-index: 2;
-    }
-    .card:hover .tooltip {
-      display: block;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 40px;
+        }
+        h2 {
+            color: #1f76c2;
+        }
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .card-icon {
+            flex-shrink: 0;
+            margin-right: 20px;
+        }
+        .card-icon img {
+            width: 60px;
+            height: 60px;
+        }
+        .card-content {
+            flex-grow: 1;
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            top: 20px;
+            left: calc(100% + 10px);
+            background: #1f76c2;
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            width: 250px;
+            z-index: 2;
+        }
+        .card:hover .tooltip {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <h2>Projects</h2>
-  <div class="projects-container">
+<h2>Projects</h2>
+<div class="projects-container">
     <div class="card">
-      <div class="card-icon">
-        <img src="img/icon-endpoint.png" alt="Endpoint Icon" />
-      </div>
-      <div class="card-content">
-        <div class="card-title">Endpoint Security Implementation</div>
-        <div class="tooltip">Led global deployment of advanced endpoint controls for 150+ devices in 8 countries. | Covered: web filtering, antivirus, DLP, and Zero Trust architecture.</div>
-      </div>
+        <div class="card-icon">
+            <img src="img/icon-endpoint.png" alt="Endpoint Icon" />
+        </div>
+        <div class="card-content">
+            <div class="card-title">Endpoint Security Implementation</div>
+            <div class="tooltip">Led global deployment of advanced endpoint controls for 150+ devices in 8 countries. | Covered: web filtering, antivirus, DLP, and Zero Trust architecture.</div>
+        </div>
     </div>
     <div class="card">
-      <div class="card-icon">
-        <img src="img/icon-awareness.png" alt="Awareness Icon" />
-      </div>
-      <div class="card-content">
-        <div class="card-title">Cybersecurity Awareness Campaign</div>
-        <div class="tooltip">Designed global training program with a corporate mascot and interactive simulations. | Scope: ISO 27001/SOC2 policies, incident management framework.</div>
-      </div>
-       <div class="card">
-      <div class="card-icon">
-        <img src="img/icon-awareness.png" alt="Awareness Icon" />
-      </div>
-      <div class="card-content">
-        <div class="card-title">Global Expansion of Endpoint Protection Sector: Corporate Security | Scope: National Cybersecurity Awareness Campaign</div>
-        <div class="tooltip">I led the mass deployment of an EDR (Endpoint Detection and Response) solution across more than 4,000 multi-platform endpoints (Windows, macOS, servers) | Key achievements: Implementation scaled to 85% of the target in the initial phase, Comprehensive protection deployed in record time. | Challenges overcome: Compatibility management in heterogeneous operating ecosystems, coordination of multi-geographic teams</div>
-      </div>
+        <div class="card-icon">
+            <img src="img/icon-awareness.png" alt="Awareness Icon" />
+        </div>
+        <div class="card-content">
+            <div class="card-title">Cybersecurity Awareness Campaign</div>
+            <div class="tooltip">Designed global training program with a corporate mascot and interactive simulations. | Scope: ISO 27001/SOC2 policies, incident management framework.</div>
+        </div>
     </div>
-  </div>
+    <div class="card">
+        <div class="card-icon">
+            <img src="img/icon-edr.png" alt="EDR Icon" />
+        </div>
+        <div class="card-content">
+            <div class="card-title">Global Expansion of Endpoint Protection</div>
+            <div class="tooltip">Deployed EDR to 4000+ multi-platform endpoints (Windows/macOS/servers). Achieved 85% initial implementation. Managed ecosystem compatibility and global team coordination.</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-icon">
+            <img src="img/icon-mfa.png" alt="MFA Icon" />
+        </div>
+        <div class="card-content">
+            <div class="card-title">Hardware-Based MFA with Yubico</div>
+            <div class="tooltip">Designed and deployed Yubico MFA in critical areas. Modeled verification flows and ran credential security awareness. Strengthened access control in sensitive systems.</div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-icon">
+            <img src="img/icon-remote.png" alt="Remote Access Icon" />
+        </div>
+        <div class="card-content">
+            <div class="card-title">Remote Access Automation during COVID-19</div>
+            <div class="tooltip">Developed Excel macro-based credential automation. Enabled secure mass distribution with multi-platform support. Transitioned operations in 72h with full national coverage.</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
