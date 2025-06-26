@@ -1,14 +1,78 @@
 
-<div class="project-card">
-    <h3>Endpoint Security Implementation</h3>
-    <p><strong>Summary:</strong> Led the global deployment of advanced endpoint controls across 150+ devices in 8 countries.</p>
-    <p><strong>Scope:</strong> Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust (ZTNA) architecture.</p>
-    <p><strong>Achievement:</strong> Rollout completed in a record 2 months.</p>
-    <p><strong>Challenges:</strong> Coordinating multinational teams and optimizing compatibility across diverse ecosystems.</p>
-</div>
-<div class="project-card">
-    <h3>Cybersecurity Awareness Campaigns</h3>
-    <p><strong>Summary:</strong> Designed a global training program using a corporate identity ("Mr. Shield") and interactive simulations.</p>
-    <p><strong>Impact:</strong> Significantly improved employees' risk perception.</p>
-    <p><strong>Scope:</strong> Development of ISO 27001/SOC2-aligned policies and implementation of an incident management framework.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Projects - Johonatan Hernandez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .card-desc {
+            font-size: 1em;
+            color: #555;
+        }
+        .tooltip {
+            display: none;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: #3498db;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+        }
+        .card:hover .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Projects</h1>
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-title">Endpoint Security Implementation</div>
+            <div class="card-desc">Led global deployment of advanced endpoint controls for 150+ devices in 8 countries.</div>
+            <div class="tooltip">
+                Web filtering, antivirus, DLP, ZTNA. Completed in record time: 2 months. Challenges: global coordination, ecosystem compatibility.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title">Cybersecurity Awareness Campaign</div>
+            <div class="card-desc">Designed global training program with identity ("Mr. Shield") and interactive simulations.</div>
+            <div class="tooltip">
+                Impact: increased risk perception. Scope: ISO 27001/SOC2-aligned policies, incident management framework.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
