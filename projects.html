@@ -3,76 +3,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects - Johonatan Hernandez</title>
+    <title>Interactive Projects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            background-color: #f4f4f4;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .card {
-            background: #fff;
+            background-color: #ffffff;
+            width: 300px;
+            margin: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding: 20px;
-            position: relative;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: 0.3s;
             overflow: hidden;
-            transition: transform 0.3s ease;
-            cursor: pointer;
+            position: relative;
         }
         .card:hover {
-            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
-        .card-title {
-            font-size: 1.3em;
+        .container {
+            padding: 20px;
+        }
+        .title {
             font-weight: bold;
-            margin-bottom: 10px;
-            color: #2c3e50;
+            color: #333;
         }
-        .card-desc {
-            font-size: 1em;
-            color: #555;
-        }
-        .tooltip {
-            display: none;
-            position: absolute;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-            background: #3498db;
-            color: #fff;
-            padding: 10px;
-            border-radius: 5px;
+        .sector {
+            color: #777;
             font-size: 0.9em;
         }
+        .tooltip {
+            visibility: hidden;
+            background-color: #555;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 0;
+            margin-left: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+            width: 100%;
+            box-sizing: border-box;
+        }
         .card:hover .tooltip {
-            display: block;
+            visibility: visible;
+            opacity: 1;
         }
     </style>
 </head>
 <body>
-    <h1>My Projects</h1>
-    <div class="grid-container">
-        <div class="card">
-            <div class="card-title">Endpoint Security Implementation</div>
-            <div class="card-desc">Led global deployment of advanced endpoint controls for 150+ devices in 8 countries.</div>
-            <div class="tooltip">
-                Web filtering, antivirus, DLP, ZTNA. Completed in record time: 2 months. Challenges: global coordination, ecosystem compatibility.
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-title">Cybersecurity Awareness Campaign</div>
-            <div class="card-desc">Designed global training program with identity ("Mr. Shield") and interactive simulations.</div>
-            <div class="tooltip">
-                Impact: increased risk perception. Scope: ISO 27001/SOC2-aligned policies, incident management framework.
-            </div>
+<div class="card">
+    <div class="container">
+        <div class="title">Implementación de Seguridad en Endpoints</div>
+        <div class="sector">Seguridad | Internacional</div>
+        <div class="tooltip">
+            Despliegue global de controles avanzados para 150+ equipos en 8 países. Ámbitos: filtrado web, antivirus, DLP, Zero Trust. Tiempo récord: 2 meses.
         </div>
     </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <div class="title">Campañas de Concientización en Ciberseguridad</div>
+        <div class="sector">Formación | Global</div>
+        <div class="tooltip">
+            Programa de capacitación global con identidad "Mr. Shield", simulaciones y políticas alineadas a ISO 27001/SOC2. Mejora crítica en percepción de riesgo.
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <div class="title">Expansión Global de Protección en Endpoints</div>
+        <div class="sector">Seguridad Corporativa | Nacional</div>
+        <div class="tooltip">
+            Despliegue masivo de solución EDR en 4000+ endpoints. Logros: 85% del objetivo en fase inicial, protección integral, coordinación global.
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <div class="title">Implementación de MFA con Yubico</div>
+        <div class="sector">Sistemas Críticos</div>
+        <div class="tooltip">
+            MFA con Yubico Authenticator para áreas estratégicas. Modelado de flujos, concientización sobre credenciales, implementación completa.
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="container">
+        <div class="title">Automatización de Acceso Remoto COVID-19</div>
+        <div class="sector">Emergencia | Continuidad Operativa</div>
+        <div class="tooltip">
+            Solución de macros en Excel para habilitación masiva de accesos. Generación de credenciales y entrega multiplataforma en 72 horas.
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
