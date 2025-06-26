@@ -235,3 +235,9 @@ h1, h2, .subtitle, #typing-text {
 .experience-card ul li {
   margin-bottom: 10px;
 }
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
