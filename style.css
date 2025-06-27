@@ -246,7 +246,7 @@ h1, h2, .subtitle, #typing-text {
   display: none;
   position: absolute;
   top: 100%;
-  left: 100px;
+  left: 150px;
   background: #1f76c2;
   color: white;
   padding: 12px;
@@ -254,7 +254,7 @@ h1, h2, .subtitle, #typing-text {
   line-height: 1.6;
   border-radius: 8px;
   margin-top: 5px;
-  width: 400px;
+  width: 500px;
   z-index: 10;
   box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
