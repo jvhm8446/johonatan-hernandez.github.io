@@ -1,146 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
-            padding: 20px;
-        }
-        h2 {
-            color: #1f76c2;
-        }
-        .accordion-item {
-            background: #fff;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            overflow: hidden;
-        }
-        .accordion-button {
-            width: 100%;
-            background: #fff;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .accordion-button:hover {
-            background: #f0f0f0;
-        }
-        .icon {
-            width: 40px;
-            height: 40px;
-        }
-        .accordion-panel {
-            display: none;
-            padding: 20px;
-            background-color: #1f76c2;
-            color: white;
-            line-height: 1.6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 30px;
+    }
+    h2 {
+      color: #1f76c2;
+    }
+    .accordion {
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+    .accordion-item {
+      background-color: white;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .accordion-header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+    .accordion-header img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .accordion-header h3 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .accordion-content {
+      background: #1f76c2;
+      color: white;
+      padding: 15px 25px;
+      font-size: 15px;
+      line-height: 1.6;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .accordion-header.active + .accordion-content {
+      max-height: 500px;
+    }
+  </style>
 </head>
 <body>
-    <h2>Projects</h2>
-    
+  <h2>Projects</h2>
+  <div class="accordion">
     <div class="accordion-item">
-        <button class="accordion-button" onclick="toggleAccordion('panel0')">
-            <img src="img/icon-endpoint.png" alt="Endpoint Icon" class="icon">
-            <span>Endpoint Security Implementation</span>
-        </button>
-        <div class="accordion-panel" id="panel0">
-            <p>Led global deployment of advanced endpoint controls for 150+ devices in 8 countries.<br>
-Areas covered: Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust architecture (ZTNA).<br>
-Achievement: Implementation completed in record time (2 months).<br>
-Key challenges:<br>
-- Efficient coordination of multi-geographic teams<br>
-- Optimization of compatibility in heterogeneous ecosystems</p>
-        </div>
+      <div class="accordion-header">
+        <img src="img/endpoint.png" alt="Endpoint Icon">
+        <h3>Endpoint Security Implementation</h3>
+      </div>
+      <div class="accordion-content">
+        <p>I led the global deployment of advanced endpoint controls for 150+ teams in 8 countries.</p>
+        <p><strong>Areas covered:</strong> Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust architecture (ZTNA).</p>
+        <p><strong>Achievement:</strong> Implementation completed in record time (2 months).</p>
+        <p><strong>Key challenges:</strong></p>
+        <ul>
+          <li>Efficient coordination of multi-geographic teams</li>
+          <li>Optimization of compatibility in heterogeneous ecosystems</li>
+        </ul>
+      </div>
     </div>
-    
+
     <div class="accordion-item">
-        <button class="accordion-button" onclick="toggleAccordion('panel1')">
-            <img src="img/icon-awareness.png" alt="Awareness Icon" class="icon">
-            <span>Cybersecurity Awareness Campaign</span>
-        </button>
-        <div class="accordion-panel" id="panel1">
-            <p>Designed a global training program with a corporate mascot (“Mr. Shield”) and interactive simulations.<br>
-Impact: Increased risk perception across teams.<br>
-Scope:<br>
-- Development of policies aligned with ISO 27001/SOC2<br>
-- Implementation of incident management framework<br>
-Additional outcomes:<br>
-- Creation and updates of vulnerability and incident management policies based on ISO 27001 and SOC2</p>
-        </div>
+      <div class="accordion-header">
+        <img src="img/awareness.png" alt="Awareness Icon">
+        <h3>Cybersecurity Awareness Campaign</h3>
+      </div>
+      <div class="accordion-content">
+        <p>Designed a global training program with a corporate mascot and interactive simulations.</p>
+        <p><strong>Impact:</strong> Increased employee risk perception.</p>
+        <p><strong>Scope:</strong> ISO 27001/SOC2-aligned policies, incident management framework.</p>
+        <p><strong>Additional Achievements:</strong> Creation and updates of vulnerability and incident response policies based on ISO27001 and SOC2 standards.</p>
+      </div>
     </div>
-    
+
     <div class="accordion-item">
-        <button class="accordion-button" onclick="toggleAccordion('panel2')">
-            <img src="img/icon-edr.png" alt="EDR Icon" class="icon">
-            <span>Global Expansion of Endpoint Protection</span>
-        </button>
-        <div class="accordion-panel" id="panel2">
-            <p>I led the mass deployment of an EDR solution across more than 4,000 endpoints (Windows, macOS, servers).<br>
-Key achievements:<br>
-- Implementation scaled to 85% of the target in the initial phase.<br>
-- Comprehensive protection deployed in record time.<br>
-Challenges:<br>
-- Compatibility management in heterogeneous operating ecosystems<br>
-- Coordination of multi-geographic teams</p>
-        </div>
+      <div class="accordion-header">
+        <img src="img/edr.png" alt="EDR Icon">
+        <h3>Global Expansion of Endpoint Protection</h3>
+      </div>
+      <div class="accordion-content">
+        <p>Led the mass deployment of an EDR solution across 4,000+ endpoints (Windows, macOS, servers).</p>
+        <p><strong>Key Achievements:</strong> 85% rollout in initial phase. Scope: National.</p>
+        <p><strong>Challenges:</strong> Coordination across geographies and compatibility across platforms.</p>
+      </div>
     </div>
-    
+
     <div class="accordion-item">
-        <button class="accordion-button" onclick="toggleAccordion('panel3')">
-            <img src="img/icon-mfa.png" alt="MFA Icon" class="icon">
-            <span>Hardware-Based MFA with Yubico</span>
-        </button>
-        <div class="accordion-panel" id="panel3">
-            <p>I designed and implemented hardware-based multi-factor authentication using Yubico Authenticator for critical systems.<br>
-Scope:<br>
-- Modeling of two-step verification flows<br>
-- Credential security awareness program<br>
-Impact:<br>
-- Strengthened access controls in sensitive systems<br>
-- Fully implemented in highly critical areas</p>
-        </div>
+      <div class="accordion-header">
+        <img src="img/mfa.png" alt="MFA Icon">
+        <h3>Hardware-Based MFA with Yubico</h3>
+      </div>
+      <div class="accordion-content">
+        <p>Implemented hardware-based MFA using Yubico Authenticator. Scope: Critical systems.</p>
+        <p>Included credential awareness and access hardening.</p>
+      </div>
     </div>
-    
+
     <div class="accordion-item">
-        <button class="accordion-button" onclick="toggleAccordion('panel4')">
-            <img src="img/icon-remote.png" alt="Remote Access Icon" class="icon">
-            <span>Remote Access Automation during COVID-19</span>
-        </button>
-        <div class="accordion-panel" id="panel4">
-            <p>Developed an automation solution with advanced Excel macros for mass secure access.<br>
-Key capabilities:<br>
-- Automated credential generation through data processing<br>
-- Mass distribution with multi-platform support (iOS/Android/Desktop)<br>
-Scope: National<br>
-Result:<br>
-- Operational transition within 72 hours<br>
-- Scalable delivery of security components</p>
-        </div>
+      <div class="accordion-header">
+        <img src="img/excel.png" alt="Remote Access Icon">
+        <h3>Remote Access Automation during COVID-19</h3>
+      </div>
+      <div class="accordion-content">
+        <p>Developed Excel macro solution for mass secure access.</p>
+        <p>Full rollout in 72 hours across platforms (iOS/Android/Desktop). Scope: Emergency continuity.</p>
+      </div>
     </div>
-    
-    <script>
-        function toggleAccordion(id) {
-            var panel = document.getElementById(id);
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        }
-    </script>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const headers = document.querySelectorAll(".accordion-header");
+      headers.forEach(header => {
+        header.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
