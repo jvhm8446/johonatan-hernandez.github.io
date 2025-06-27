@@ -1,10 +1,11 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Projects</title>
-  <style>
+<meta charset="utf-8"/>
+<title>Projects</title>
+<style>
     body {
       font-family: Arial, sans-serif;
       background: #f5f5f5;
@@ -22,24 +23,24 @@
     }
 
     .card {
-      display: flex;
-      align-items: center;
-      gap: 15px;
       background-color: white;
       border-radius: 10px;
-      padding: 20px;
-      transition: background-color 0.3s ease;
+      padding: 15px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: box-shadow 0.3s ease;
       position: relative;
     }
 
     .card:hover {
-      background-color: #e6f0fa;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
     }
 
-    .card-icon {
-      width: 40px;
-      height: 40px;
+    .card-icon img {
+      width: 50px;
+      height: 50px;
     }
 
     .card-title {
@@ -51,17 +52,15 @@
       display: none;
       position: absolute;
       top: 100%;
-      left: 100px;
+      left: 80px;
       background: #1f76c2;
       color: white;
-      padding: 12px;
-      font-size: 15px;
-      line-height: 1.6;
-      border-radius: 8px;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 6px;
       margin-top: 5px;
-      width: 400px;
+      width: 300px;
       z-index: 10;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
 
     .card:hover .tooltip {
@@ -70,60 +69,33 @@
   </style>
 </head>
 <body>
-  <h2>Projects</h2>
-  <div class="projects-container">
-    <div class="card">
-      <img src="img/icon-endpoint.png" alt="Endpoint Icon" class="card-icon" />
-      <div class="card-title">Endpoint Security Implementation</div>
-      <div class="tooltip">
-        <p>I led the global deployment of advanced endpoint controls for 150+ teams in 8 countries.</p>
-        <p><strong>Areas covered:</strong> Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust architecture (ZTNA).</p>
-        <p><strong>Achievement:</strong> Implementation completed in record time (2 months).</p>
-        <p><strong>Key challenges:</strong><br>Efficient coordination of multi-geographic teams<br>Optimization of compatibility in heterogeneous ecosystems</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="img/icon-awareness.png" alt="Awareness Icon" class="card-icon" />
-      <div class="card-title">Cybersecurity Awareness Campaigns</div>
-      <div class="tooltip">
-        <p>I designed a global training program using corporate identity (“Mr. Shield”) and interactive simulations.</p>
-        <p><strong>Impact:</strong> Critical increase in risk perception among employees.</p>
-        <p><strong>Scope:</strong> Development of policies aligned with ISO 27001/SOC2<br>Implementation of incident management framework</p>
-        <p><strong>Other achievements:</strong> Creation and updating of vulnerability and security incident management policies based on ISO27001 and SOC2</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="img/icon-edr.png" alt="EDR Icon" class="card-icon" />
-      <div class="card-title">Global Expansion of Endpoint Protection</div>
-      <div class="tooltip">
-        <p>I led the mass deployment of an EDR (Endpoint Detection and Response) solution across more than 4,000 multi-platform endpoints (Windows, macOS, servers).</p>
-        <p><strong>Key achievements:</strong><br>Implementation scaled to 85% of the target in the initial phase.<br>Comprehensive protection deployed in record time.</p>
-        <p><strong>Challenges overcome:</strong><br>Compatibility management in heterogeneous operating ecosystems<br>Coordination of multi-geographic teams</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="img/icon-mfa.png" alt="MFA Icon" class="card-icon" />
-      <div class="card-title">Hardware-Based MFA with Yubico</div>
-      <div class="tooltip">
-        <p>I designed and implemented multi-factor authentication using Yubico Authenticator for strategic departments.</p>
-        <p><strong>Scope:</strong> Modeling of two-step verification flows<br>Credential security awareness program</p>
-        <p><strong>Impact:</strong> Strengthening of access controls in sensitive systems<br>Full implementation in highly critical areas</p>
-      </div>
-    </div>
-
-    <div class="card">
-      <img src="img/icon-remote.png" alt="Remote Access Icon" class="card-icon" />
-      <div class="card-title">Remote Access Automation during COVID-19</div>
-      <div class="tooltip">
-        <p>I developed an automation solution with advanced macros in Excel for mass secure access enablement.</p>
-        <p>Automated credential generation through data processing<br>Mass distribution with multi-platform support (iOS/Android/Desktop)</p>
-        <p><strong>Scope:</strong> Complete national coverage</p>
-        <p><strong>Result:</strong> Guaranteed operational transition within 72 hours<br>Scalable delivery of security components</p>
-      </div>
-    </div>
-  </div>
+<h2>Projects</h2>
+<div class="projects-container">
+<div class="card">
+<div class="card-icon"><img alt="Endpoint Icon" src="endpointsecurity.png"/></div>
+<div class="card-title">Endpoint Security Implementation</div>
+<div class="tooltip">Led global deployment of advanced endpoint controls for 150+ devices in 8 countries. | Covered: web filtering, antivirus, DLP, and Zero Trust architecture.</div>
+</div>
+<div class="card">
+<div class="card-icon"><img alt="Awareness Icon" src="awa.png"/></div>
+<div class="card-title">Cybersecurity Awareness Campaign</div>
+<div class="tooltip">Designed a global training program with a corporate mascot and interactive simulations. | Scope: ISO 27001/SOC2 policies, incident management framework.</div>
+</div>
+<div class="card">
+<div class="card-icon"><img alt="EDR Icon" src="edr.png"/></div>
+<div class="card-title">Global Expansion of Endpoint Protection</div>
+<div class="tooltip">I led the mass deployment of an EDR solution across 4,000+ endpoints (Windows, macOS, servers). Achievements: 85% rollout in initial phase. Scope: National.</div>
+</div>
+<div class="card">
+<div class="card-icon"><img alt="MFA Icon" src="yubico.png"/></div>
+<div class="card-title">Hardware-Based MFA with Yubico</div>
+<div class="tooltip">Implemented hardware-based MFA using Yubico Authenticator. Scope: Critical systems. Included credential awareness and access hardening.</div>
+</div>
+<div class="card">
+<div class="card-icon"><img alt="Remote Access Icon" src="excel.png"/></div>
+<div class="card-title">Remote Access Automation during COVID-19</div>
+<div class="tooltip">Developed Excel macro solution for mass secure access. Full rollout in 72 hours across platforms (iOS/Android/Desktop). Scope: Emergency continuity.</div>
+</div>
+<h2>Prototypes</h2><div class="card"><div class="card-icon"><img alt="Prototype Icon" src="prototype.png"/></div><div class="card-title">Prototype: Intelligent Access Control System</div><div class="tooltip">Developed a prototype to improve access control in mass transit systems. Scope: Flow monitoring, fraud prevention, integration with surveillance. Tool: Excel modeling with route simulations (H74, H73, A74, H63). Impact: Up to 40% reduction in validation time, 85% increase in traceability. Date: 04/10/2017</div></div></div>
 </body>
 </html>
