@@ -263,3 +263,44 @@ h1, h2, .subtitle, #typing-text {
   display: block;
 }
 </style>
+
+
+.project-button {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-button:hover {
+    background-color: #e6f2ff;
+    transform: translateY(-2px);
+}
+
+.project-tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 300px;
+    background-color: #0074cc;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 10;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-button:hover .project-tooltip {
+    display: block;
+}
