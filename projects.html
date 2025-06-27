@@ -1,102 +1,92 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            padding: 40px;
-        }
-
-        h2 {
-            color: #1f76c2;
-        }
-
-        .projects-container {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .card {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            position: relative;
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .card img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .card-title {
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        .tooltip {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 200px;
-            background: #1f76c2;
-            color: white;
-            padding: 12px;
-            font-size: 15px;
-            line-height: 1.6;
-            border-radius: 8px;
-            margin-top: 5px;
-            width: 400px;
-            z-index: 10;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        .card:hover .tooltip {
-            display: block;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+    h2 {
+      color: #1f76c2;
+    }
+    .projects-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      position: relative;
+    }
+    .card-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 100px;
+      background: #1f76c2;
+      color: white;
+      padding: 12px;
+      font-size: 15px;
+      line-height: 1.6;
+      border-radius: 8px;
+      margin-top: 5px;
+      width: 400px;
+      z-index: 10;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .card:hover .tooltip {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h2>Projects</h2>
-    <div class="projects-container">
-
-        <div class="card">
-            <img src="img/endpointsecurity.png" alt="Endpoint Icon">
-            <div>
-                <div class="card-title">Endpoint Security Implementation</div>
-                <div class="tooltip">
-                    Led the global deployment of advanced endpoint controls for 150+ teams in 8 countries.<br><br>
-                    Areas covered: Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust architecture (ZTNA).<br><br>
-                    Achievement: Implementation completed in record time (2 months).<br><br>
-                    Key challenges:<br>
-                    • Efficient coordination of multi-geographic teams<br>
-                    • Optimization of compatibility in heterogeneous ecosystems
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="img/awareness.png" alt="Awareness Icon">
-            <div>
-                <div class="card-title">Cybersecurity Awareness Campaign</div>
-                <div class="tooltip">
-                    Designed a global training program with a corporate mascot and interactive simulations.<br><br>
-                    Scope: ISO 27001/SOC2 policies, incident management framework.<br><br>
-                    Other scope:<br>
-                    • Creation and update of vulnerability and incident management policies aligned with ISO 27001 and SOC2.
-                </div>
-            </div>
-        </div>
-
-    </div>
+<h2>Projects</h2>
+<div class="projects-container">
+<div class="card">
+  <div class="card-title">Endpoint Security Implementation</div>
+  <div class="tooltip"><p>I led the global deployment of advanced endpoint controls for 150+ teams in 8 countries.</p>
+<p>Areas covered: Web filtering, antivirus protection, data loss prevention (DLP), and Zero Trust architecture (ZTNA).</p>
+<p><strong>Achievement:</strong> Implementation completed in record time (2 months).</p>
+<p><strong>Key challenges:</strong><br>Efficient coordination of multi-geographic teams<br>Optimization of compatibility in heterogeneous ecosystems</p></div>
+</div>
+<div class="card">
+  <div class="card-title">Cybersecurity Awareness Campaigns</div>
+  <div class="tooltip"><p>I designed a global training program using corporate identity (“Mr. Shield”) and interactive simulations.</p>
+<p><strong>Impact:</strong> Critical increase in risk perception among employees.</p>
+<p><strong>Scope:</strong> Development of policies aligned with ISO 27001/SOC2, implementation of incident management framework.</p>
+<p><strong>Other achievements:</strong><br>Creation and updating of vulnerability and security incident management policies based on ISO27001 and SOC2</p></div>
+</div>
+<div class="card">
+  <div class="card-title">Global Expansion of Endpoint Protection</div>
+  <div class="tooltip"><p>I led the mass deployment of an EDR (Endpoint Detection and Response) solution across more than 4,000 multi-platform endpoints (Windows, macOS, servers).</p>
+<p><strong>Key achievements:</strong><br>Implementation scaled to 85% of the target in the initial phase.<br>Comprehensive protection deployed in record time.</p>
+<p><strong>Challenges overcome:</strong><br>Compatibility management in heterogeneous operating ecosystems<br>Coordination of multi-geographic teams</p></div>
+</div>
+<div class="card">
+  <div class="card-title">Hardware-Based MFA with Yubico</div>
+  <div class="tooltip"><p>I designed and implemented multi-factor authentication using Yubico Authenticator for strategic departments:</p>
+<p>Modeling of two-step verification flows<br>Credential security awareness program</p>
+<p><strong>Impact:</strong> Strengthening of access controls in sensitive systems<br>Full implementation in highly critical areas</p></div>
+</div>
+<div class="card">
+  <div class="card-title">Remote Access Automation during COVID-19</div>
+  <div class="tooltip"><p>I developed an automation solution with advanced macros in Excel for mass secure access enablement:</p>
+<p>Automated credential generation through data processing<br>Mass distribution with multi-platform support (iOS/Android/Desktop)</p>
+<p><strong>Scope:</strong> Complete national coverage</p>
+<p><strong>Result:</strong> Guaranteed operational transition within 72 hours<br>Scalable delivery of security components</p></div>
+</div>
+</div>
 </body>
 </html>
