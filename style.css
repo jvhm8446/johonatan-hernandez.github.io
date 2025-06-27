@@ -269,3 +269,32 @@ h1, h2, .subtitle, #typing-text {
     filter: brightness(1.2);
     transition: all 0.3s ease-in-out;
 }
+
+
+.skill-item {
+  width: 150px;
+  text-align: center;
+}
+.skill-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+
+.skill-icon {
+  width: 45px !important;
+  height: 45px !important;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+.skill-item {
+  width: 120px !important;
+}
