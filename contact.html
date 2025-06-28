@@ -1,1 +1,63 @@
-<h2>Contact</h2><p>Email: ingenierosys84@outlook.es<br>LinkedIn: johonathan-hernandez-machado</p>
+
+<style>
+.contact-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-card {
+  width: 280px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.contact-card img {
+  width: 40px;
+  margin-bottom: 15px;
+}
+.contact-card h5 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #0056b3;
+}
+.contact-card p {
+  font-size: 14px;
+  margin: 0;
+}
+</style>
+
+<section id="contact" class="section">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-card-grid">
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone">
+        <h5>Phone</h5>
+        <p>+57 300 000 0000</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+        <h5>Email</h5>
+        <p>jhonatan@email.com</p>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <h5>GitHub</h5>
+        <p><a href="https://github.com/johonatan-hernandez" target="_blank">github.com/johonatan-hernandez</a></p>
+      </div>
+      <div class="contact-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        <h5>LinkedIn</h5>
+        <p><a href="https://www.linkedin.com/in/jhonatan-hernandez" target="_blank">linkedin.com/in/jhonatan-hernandez</a></p>
+      </div>
+    </div>
+  </div>
+</section>
