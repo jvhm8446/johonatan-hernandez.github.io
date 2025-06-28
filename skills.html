@@ -1,62 +1,42 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills</title>
-  <style>
-    .container { max-width: 1000px; margin: auto; padding: 0 20px; }
-    .skill-box { width: 100px; text-align: center; padding: 10px; border-radius: 10px; background: #f9f9f9; box-shadow: 0 2px 5px rgba(0,0,0,0.1); transition: transform 0.2s, background 0.2s; }
-    .skill-box:hover { background: #e0f0ff; transform: scale(1.05); }
-    .skill-box img { max-width: 50px; margin-bottom: 10px; }
-    .skills-section { margin-bottom: 50px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
-  </style>
-</head>
-<body>
-
-<section id="skills" style="padding: 50px 0; background: #fff;">
+<section id="skills" class="section">
   <div class="container">
-    <h2 style="text-align:center; margin-bottom: 30px;">Skills</h2>
+    <h2 class="section-title">Skills</h2>
 
-    <div class="skills-section">
-      <h3>Languages</h3>
-      <div style="display:flex; flex-wrap:wrap; gap:30px;">
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><p>Python</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"><p>C++</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"><p>SQL</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><p>Java</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/CUDA_logo.svg"><p>Cuda</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg"><p>Scala</p></div>
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="text-center">Languages</h4>
+        <ul class="list-unstyled text-center">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="40"><p>Python</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40"><p>C++</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" width="40"><p>SQL</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="40"><p>Java</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/CUDA_logo.svg" width="40"><p>Cuda</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scala/scala-original.svg" width="40"><p>Scala</p></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-center">Libraries</h4>
+        <ul class="list-unstyled text-center">
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" width="40"><p>NumPy</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" width="40"><p>Pandas</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" width="40"><p>OpenCV</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/VTK_Logo.png" width="40"><p>VTK</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="40"><p>scikit-learn</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg" width="40"><p>matplotlib</p></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-center">Frameworks</h4>
+        <ul class="list-unstyled text-center">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" width="40"><p>Flask</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg" width="40"><p>Hadoop</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" width="40"><p>Spark</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg" width="40"><p>Keras</p></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" width="40"><p>TensorFlow</p></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" width="40"><p>PyTorch</p></li>
+        </ul>
       </div>
     </div>
-
-    <div class="skills-section">
-      <h3>Libraries</h3>
-      <div style="display:flex; flex-wrap:wrap; gap:30px;">
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg"><p>NumPy</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"><p>Pandas</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg"><p>OpenCV</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/VTK_Logo.png"><p>VTK</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"><p>scikit-learn</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg"><p>matplotlib</p></div>
-      </div>
-    </div>
-
-    <div class="skills-section">
-      <h3>Frameworks</h3>
-      <div style="display:flex; flex-wrap:wrap; gap:30px;">
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"><p>Flask</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/hadoop/hadoop-original.svg"><p>Hadoop</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"><p>Spark</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"><p>Keras</p></div>
-        <div class="skill-box"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg"><p>TensorFlow</p></div>
-        <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"><p>PyTorch</p></div>
-      </div>
-    </div>
-
   </div>
 </section>
-
-</body>
-</html>
