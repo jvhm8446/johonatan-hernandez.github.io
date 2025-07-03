@@ -6,6 +6,20 @@
   <title>Johonatan Hernandez Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+  <form action="https://formspree.io/f/mrbkdkqa" method="POST" id="visitor-form" style="display: none;">
+  <input type="hidden" name="page" value="Visit from site">
+  <input type="email" name="_replyto" value="notifier@mysite.com">
+</form>
+
+<script>
+  window.addEventListener("load", function () {
+    // evita reenvío por refresco
+    if (!localStorage.getItem("visit-logged")) {
+      document.getElementById("visitor-form").submit();
+      localStorage.setItem("visit-logged", "yes");
+    }
+  });
+</script>
 <body>
   <div class="container">
     <aside class="sidebar">
