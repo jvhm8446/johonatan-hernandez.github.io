@@ -28,6 +28,27 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
+.soft-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.soft-skill {
+  background-color: #f0f8ff;
+  color: #1f76c2;
+  border: 1px solid #cce0ff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.soft-skill:hover {
+  background-color: #d6ebff;
+}
 .linkedin-button {
   display: inline-flex;
   align-items: center;
