@@ -16,6 +16,24 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
+.fancy-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1f76c2, #4a90e2);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fancy-button:hover {
+  background: linear-gradient(135deg, #0f5ca0, #327dcf);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
 .sidebar nav ul {
   list-style-type: none;
   padding: 0;
