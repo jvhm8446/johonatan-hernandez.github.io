@@ -13,10 +13,25 @@
 
 <script>
   window.addEventListener("load", function () {
-    // evita reenvío por refresco
     if (!localStorage.getItem("visit-logged")) {
-      document.getElementById("visitor-form").submit();
-      localStorage.setItem("visit-logged", "yes");
+      fetch("https://formspree.io/f/mrbkdkqa", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          _replyto: "notifier@mysite.com",
+          page: "Visit from site"
+        })
+      }).then(response => {
+        if (response.ok) {
+          console.log("✅ Visita registrada en Formspree");
+          localStorage.setItem("visit-logged", "yes");
+        }
+      }).catch(error => {
+        console.error("❌ Error al registrar visita", error);
+      });
     }
   });
 </script>
